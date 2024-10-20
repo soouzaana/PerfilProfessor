@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1bba47;
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -213,12 +222,12 @@ main {
   align-items: center;
   flex-wrap: wrap;
   transition: padding-left 0.5s;
-  padding: 10%;
+  padding: 8%;
   max-width: 100%;
 }
 
 .container {
-  width: 993px;
+  width: 1120px;
 }
 
 .perfil_professor {
@@ -303,7 +312,6 @@ main {
 .textos {
   display: flex;
   opacity: 1px;
-  gap: 10px;
   justify-content: space-between;
   flex-direction: column;
 }
@@ -323,4 +331,86 @@ main {
 }
 .email {
   color: #9ab69a;
+}
+
+.calendario {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 483px;
+  height: auto;
+  padding: 20px;
+  gap: 25px;
+  border-radius: 8px;
+  border: 1.5px solid #9ab69e;
+  box-sizing: border-box;
+}
+
+.titulo {
+  display: flex;
+}
+
+h5 {
+  text-align: left;
+  color: #000;
+  margin-left: 10px;
+}
+
+.conteudo {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1.5px solid #9ab69e;
+  overflow: hidden;
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.nav-btn {
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 0 20px 20px 20px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.periodos {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.075em;
+  text-align: center;
+}
+
+.periodos th {
+  width: 72px;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 50px;
+  padding: 10px; /* Aumenta o padding para evitar que o texto fique muito colado */
+  word-wrap: break-word; /* Quebra palavras longas */
+  overflow: hidden; /* Impede que o conteúdo transborde */
+  text-overflow: ellipsis;
+}
+
+th,
+td {
+  margin-top: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 22.5px;
+  letter-spacing: 0.075em;
+  text-align: center;
 }
