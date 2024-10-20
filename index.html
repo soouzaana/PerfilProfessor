@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Perfil do Professor</title>
+</head>
+
+<body>
+  <!--Cabeçalho começo-->
+  <header>
+    <div class="esquerda">
+      <div id="user">
+        <div id="img">
+          <img id=userAvatar src="/assets/header/ImagemPerfilFoto.svg" alt="foto">
+        </div>
+        <p id="infoUser">
+          <span class="descricao">User Name</span>
+          <span class="descricao">Professor</span>
+        </p>
+      </div>
+      <a href="#" id="seta">
+        <img src="/assets/header/Seta-B.svg" alt="seta">
+      </a>
+      <a href="#" id="notificacao">
+        <img id="botaoNotificacao" src="/assets/header/Notificacao-Icone.svg" alt="notificacao">
+      </a>
+
+    </div>
+    <div class="direita">
+      <a href="#" id="logo">
+        <img src="/assets/header/Logomarca-Vetor.svg" alt="Logo">
+      </a>
+    </div>
+  </header>
+  <!--Cabeçalho final-->
+  <!--SideBar começo-->
+  <nav id="sidebar">
+    <div id="sidebar-content">
+      <ul id="side_items">
+        <li class="side-item">
+          <a href="#">
+            <img class="icone" src="/assets/sidebar/Home.svg" alt="Inicio">
+            <span class="item-description">Início</span>
+          </a>
+        </li>
+        <li class="side-item">
+          <a href="#">
+            <img class="icone" src="/assets/sidebar/Usuario.svg" alt="usuario">
+            <span class="item-description">Perfil</span>
+          </a>
+        </li>
+        <li class="side-item">
+          <a href="#">
+            <img class="icone" src="/assets/sidebar/Calendario.svg" alt="calendario">
+            <span class="item-description">Calendário</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="bottom">
+      <div id="configuracoes" class="side-item">
+        <a href="#">
+          <img class="icone" src="/assets/sidebar/Configurações.svg" alt="configuracoes">
+          <span class="item-description">Configurações</span>
+        </a>
+      </div>
+      <div id="logout">
+        <button id="logout-btn">
+          <img class="icone" src="/assets/sidebar/Sair.svg" alt="sair">
+          <span class="item-description">Sair</span>
+        </button>
+      </div>
+  </nav>
+  <!--SideBar final-->
+  <main>
+    <div class="container">
+      <!--Perfil começo-->
+      <div class="perfil_professor">
+        <button class="editar_background">
+          <img src="/assets/main/Editar.svg" alt="botão de editar">
+        </button>
+        <div class="informacoes">
+          <div class="foto_perfil">
+            <img src="/assets/header/ImagemPerfilFoto.svg" alt="foto de perfil">
+          </div>
+          <button class="editar">
+            <img src="/assets/main/Editar.svg" alt="botão de editar">
+          </button>
+          <div class="textos">
+            <p class="nome">Danilo Escudero</p>
+            <p class="email">email@gmail.com</p>
+            <p class="cargo">Professor</p>
+          </div>
+        </div>
+      </div>
+      <!-- Perfil final-->
+
+      <div class="outros">
+        <div class="disponibilidade">
+          <img src="/assets/main/Sisgha Icon.svg" alt="icon relogio">
+          <h6>Disponibilidade</h6>
+          <div class="calendario">
+          </div>
+        </div>
+        <div class="disciplinas"></div>
+      </div>
+    </div>
+  </main>
+
+
+</body>
+
+</html>
