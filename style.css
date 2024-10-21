@@ -230,6 +230,11 @@ main {
   width: 1120px;
 }
 
+.outros{
+ display: flex;
+ justify-content: space-between;
+}
+
 .perfil_professor {
   background-image: url(/assets/main/faa45cd0cb53a0200acb5c4ab6f565b6.jpg);
   background-repeat: no-repeat;
@@ -401,7 +406,7 @@ table {
   padding: 10px 50px;
   padding: 10px; /* Aumenta o padding para evitar que o texto fique muito colado */
   word-wrap: break-word; /* Quebra palavras longas */
-  overflow: hidden; /* Impede que o conteúdo transborde */
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -413,4 +418,21 @@ td {
   line-height: 22.5px;
   letter-spacing: 0.075em;
   text-align: center;
+}
+
+.disciplinas{
+  margin-top: 50px;
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  padding: 20px;
+  gap: 25px;
+  border-radius: 8px;
+  border: 1.5px solid #9ab69e;
+  box-sizing: border-box;
+}
+
+.ensino{
+  width: 19px;
+  height: 18px;
 }
