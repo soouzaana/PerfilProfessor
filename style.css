@@ -15,6 +15,11 @@
   box-sizing: border-box;
   font-family: Poppins;
 }
+
+html{
+  font-size: 62.5%;
+}
+
 body {
   font-family: Poppins;
   min-height: 100vh;
@@ -230,9 +235,9 @@ main {
   width: 1120px;
 }
 
-.outros{
- display: flex;
- justify-content: space-between;
+.outros {
+  display: flex;
+  justify-content: space-between;
 }
 
 .perfil_professor {
@@ -351,10 +356,11 @@ main {
 }
 
 .titulo {
-  display: flex;
+  display: flex;  
+  height: 20px;
 }
 
-h5 {
+.titulo h5 {
   text-align: left;
   color: #000;
   margin-left: 10px;
@@ -404,8 +410,8 @@ table {
   width: 72px;
   border-bottom: 2px solid #ccc;
   padding: 10px 50px;
-  padding: 10px; /* Aumenta o padding para evitar que o texto fique muito colado */
-  word-wrap: break-word; /* Quebra palavras longas */
+  padding: 10px;
+  word-wrap: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -420,19 +426,206 @@ td {
   text-align: center;
 }
 
-.disciplinas{
+.disciplinas {
   margin-top: 50px;
   width: 100%;
   max-width: 620px;
-  height: auto;
-  padding: 20px;
+  height: 338px;
+  padding: 20px 20px 20px 0;
   gap: 25px;
   border-radius: 8px;
   border: 1.5px solid #9ab69e;
   box-sizing: border-box;
+  display: flex;
+  
+  transform: translateX(0);
 }
 
-.ensino{
+.titulo p{
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.ensino {
   width: 19px;
   height: 18px;
 }
+
+.carrossel{
+  position: relative;
+  padding: 15px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.gallery-wrapper{
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.gallery-wrapper::-webkit-scrollbar{
+  display: none;
+}
+
+.gallery{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.arrow-left,
+.arrow-right{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;  
+  width: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+
+.arrow-left img, .arrow-right img{
+  width: 15px;
+}
+
+.arrow-right{
+  left: auto;
+  right: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow-left:hover, .arrow-right:hover{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2000%)
+  hue-rotate(90deg) brightness(70%);
+}
+
+.item{  
+  width: 430px;
+  height: 243px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  transition: all 400ms ease-in-out;
+}
+
+.current-item{
+  opacity: 1;
+}
+
+.card-item{
+  width: 100%;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  
+}
+
+/*
+.carrossel{
+  position: relative;
+  padding: 15px;
+  max-width: 100%;
+  margin: 0 auto;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+  display: flex;
+  gap: 20px;  
+  overflow: auto;
+}
+
+.arrow-left, .arrow-right{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow-left:hover, .arrow-right:hover{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2000%)
+  hue-rotate(90deg) brightness(70%);
+}
+
+.arrow-left img, .arrow-right img{
+  width: 15px;
+}
+
+.arrow-right{
+  left: auto;
+  right: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  height: 243px;
+  border-radius: 8px;
+  border: 1.5px solid #9F9F9F;
+  margin-top: 20px;
+  flex-flow: row nowrap;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  width: 100%;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  height: 73px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-list .card-link .turmas {
+  font-size: 11px;
+  font-weight: 500;
+  color: #afafaf;
+}
+
+.card-list .card-link p{
+  margin-left: 20px;
+} 
+
+.card-list .card-link .card-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.card-list .card-link .materias {
+  display: flex;
+  justify-content: left;
+}
+
+.card-list .card-link .badge {
+  width: 87px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  border: 1.5px 0px 0px 0px;
+  border: 1.5px solid #9f9f9f;
+  margin-right: 20px;
+  color: #050f07;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16.5px;
+  text-align: center;
+  text-wrap: nowrap;
+  margin-top: 20px;
+}*/

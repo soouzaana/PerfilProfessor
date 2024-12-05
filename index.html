@@ -162,20 +162,117 @@
         <!--Calendário final-->
 
         <!--Disciplinas início-->
-        <div class="disciplinas">
+        <div class="disciplinas" id="card">
           <div class="titulo">
             <img class="ensino" src="/assets/main/Disciplina (1).svg" alt="ícone ensino">
-            <h5>Ensino</h5>
+            <p>Ensino</p>
           </div>
           <div class="carrossel">
+            <button class="arrow-right control">
+              <img src="/assets/main/keyboard-right-arrow-button-1_icon-icons.com_72690.svg" alt="">
+            </button>
+            <button class="arrow-left control">
+              <img src="/assets/main/keyboard-left-arrow-button_icon-icons.com_72692.svg" alt="">
+            </button>
+            <div class="gallery-wrapper">
+              <div class="gallery">
+                <div class="card-item">
+                  <div class="card-link">
+                    <img class="item current-item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
+                    <h5 class="card-title">Técnico em Informática 1</h5>
+                    <p class="turmas">Turmas: 1ºA, 3ºA, 3ºB</p>
+                    <div class="materias">
+                      <p class="badge">L. L. Prog</p>
+                      <p class="badge">Redes</p>
+                    </div>
+                  </div>
+                </div>
 
+                <div class="card-item">
+                  <div class="card-link">
+                    <img class="item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
+                    <h5 class="card-title">Técnico em Informática 2</h5>
+                    <p class="turmas">Turmas: 1ºA, 3ºA, 3ºB</p>
+                    <div class="materias">
+                      <p class="badge">L. L. Prog</p>
+                      <p class="badge">Redes</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-item">
+                  <div class="card-link">
+                    <img class="item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
+                    <h5 class="card-title">Técnico em Informática 3</h5>
+                    <p class="turmas">Turmas: 1ºA, 3ºA, 3ºB</p>
+                    <div class="materias">
+                      <p class="badge">L. L. Prog</p>
+                      <p class="badge">Redes</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-item">
+                  <div class="card-link">
+                    <img class="item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
+                    <h5 class="card-title">Técnico em Informática 4</h5>
+                    <p class="turmas">Turmas: 1ºA, 3ºA, 3ºB</p>
+                    <div class="materias">
+                      <p class="badge">L. L. Prog</p>
+                      <p class="badge">Redes</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-item">
+                  <div class="card-link">
+                    <img class="item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
+                    <h5 class="card-title">Técnico em Informática 5</h5>
+                    <p class="turmas">Turmas: 1ºA, 3ºA, 3ºB</p>
+                    <div class="materias">
+                      <p class="badge">L. L. Prog</p>
+                      <p class="badge">Redes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
   </main>
+  <script>
+  const controls = document.querySelectorAll('.control');
+    let currentItem = 0;
+    const items = document.querySelectorAll('.card-item');
+    const maxItems = items.length;
 
+    controls.forEach(control => {
+      control.addEventListener('click', () => {
+        const isLeft = control.classList.contains('arrow-left');
 
+        if (isLeft) {
+          currentItem -= 1;
+        } else {
+          currentItem += 1;
+        }
+
+        if (currentItem >= maxItems) {
+          currentItem = 0;
+        }
+        if (currentItem < 0) {
+          currentItem = maxItems - 1;
+        }
+
+        items.forEach(item => item.classList.remove('current-item'));
+
+        items[currentItem].scrollIntoView({
+          inline: center,
+          behavior: "smooth"
+        });
+
+        items[currentItem].classList.add('current-item');
+      });
+    });
+    </script>
 </body>
 
 </html>
