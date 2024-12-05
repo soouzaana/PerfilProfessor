@@ -106,8 +106,8 @@
       <div class="outros">
         <div class="calendario">
           <div class="titulo">
-            <img src="/assets/main/Sisgha Icon.svg" alt="icon relogio">
-            <h5>Disponibilidade</h5>
+            <img class="ensino" src="/assets/main/Sisgha Icon.svg" alt="icon relogio">
+            <p>Disponibilidade</p>
           </div>
           <div class="conteudo">
             <div class="navegacao">
@@ -167,18 +167,18 @@
             <img class="ensino" src="/assets/main/Disciplina (1).svg" alt="ícone ensino">
             <p>Ensino</p>
           </div>
-          <div class="carrossel">
+          <div class="banners">
             <button class="arrow-right control">
               <img src="/assets/main/keyboard-right-arrow-button-1_icon-icons.com_72690.svg" alt="">
             </button>
             <button class="arrow-left control">
               <img src="/assets/main/keyboard-left-arrow-button_icon-icons.com_72692.svg" alt="">
             </button>
-            <div class="gallery-wrapper">
-              <div class="gallery">
-                <div class="card-item">
-                  <div class="card-link">
-                    <img class="item current-item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
+            <div class="banner-slider">
+              <div class="card-item active">
+                <div class="card-link">
+                  <img class="item current-item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
+                  <div class="info">
                     <h5 class="card-title">Técnico em Informática 1</h5>
                     <p class="turmas">Turmas: 1ºA, 3ºA, 3ºB</p>
                     <div class="materias">
@@ -187,47 +187,13 @@
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="card-item">
-                  <div class="card-link">
-                    <img class="item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
-                    <h5 class="card-title">Técnico em Informática 2</h5>
-                    <p class="turmas">Turmas: 1ºA, 3ºA, 3ºB</p>
-                    <div class="materias">
-                      <p class="badge">L. L. Prog</p>
-                      <p class="badge">Redes</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card-item">
-                  <div class="card-link">
-                    <img class="item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
-                    <h5 class="card-title">Técnico em Informática 3</h5>
-                    <p class="turmas">Turmas: 1ºA, 3ºA, 3ºB</p>
-                    <div class="materias">
-                      <p class="badge">L. L. Prog</p>
-                      <p class="badge">Redes</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card-item">
-                  <div class="card-link">
-                    <img class="item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
-                    <h5 class="card-title">Técnico em Informática 4</h5>
-                    <p class="turmas">Turmas: 1ºA, 3ºA, 3ºB</p>
-                    <div class="materias">
-                      <p class="badge">L. L. Prog</p>
-                      <p class="badge">Redes</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card-item">
-                  <div class="card-link">
-                    <img class="item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
-                    <h5 class="card-title">Técnico em Informática 5</h5>
+              <div class="card-item">
+                <div class="card-link">
+                  <img class="item current-item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
+                  <div class="info">
+                    <h5 class="card-title">Técnico em Informática 1</h5>
                     <p class="turmas">Turmas: 1ºA, 3ºA, 3ºB</p>
                     <div class="materias">
                       <p class="badge">L. L. Prog</p>
@@ -236,11 +202,26 @@
                   </div>
                 </div>
               </div>
+
+              <div class="card-item">
+                <div class="card-link">
+                  <img class="item current-item" src="assets/main/bfcafa3df9f8e6ca6e210b8fe145da6d.png" alt="card image">
+                  <div class="info">
+                    <h5 class="card-title">Técnico em Informática 1</h5>
+                    <p class="turmas">Turmas: 1ºA, 3ºA, 3ºB</p>
+                    <div class="materias">
+                      <p class="badge">L. L. Prog</p>
+                      <p class="badge">Redes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
   </main>
   <script>
-  const controls = document.querySelectorAll('.control');
+    const controls = document.querySelectorAll('.control');
     let currentItem = 0;
     const items = document.querySelectorAll('.card-item');
     const maxItems = items.length;
@@ -272,7 +253,7 @@
         items[currentItem].classList.add('current-item');
       });
     });
-    </script>
+  </script>
 </body>
 
 </html>
