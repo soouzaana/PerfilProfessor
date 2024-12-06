@@ -2,7 +2,7 @@
 
 Este projeto consiste na implementação de uma tela a partir de um protótipo do Figma.
 
-<p><img src="assets/outros/Tela.png"><br>Demonstração da tela</p>
+<p><img src="assets/outros/tela.png"><br>Demonstração da tela</p>
 
 ## Tabela de Conteúdos
 
@@ -12,12 +12,13 @@ Este projeto consiste na implementação de uma tela a partir de um protótipo d
 
 ## 📄 Sobre
 
-A tela foi desenvolvida com base no modelo "Professor: Perfil do Professor" do SISGHA, no Figma, visando aplicar os conceitos de HTML e CSS anteriormente estudados.
+A tela foi desenvolvida com base no modelo "Professor: Perfil do Professor" do SISGHA, no Figma, visando aplicar os conceitos de HTML, CSS e JavaScript anteriormente estudados.
 
 ## 👩🏻‍💻 Tecnologias Utilizadas
 
 - **HTML**: Estrutura da página;
-- **CSS**: Estilização e layout.
+- **CSS**: Estilização e layout;
+- **JavaScript**: Efeitos de carrossel.
 
 ## 💻 Ferramentas utilizadas
 
